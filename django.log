@@ -1,0 +1,6 @@
+2024-09-04 00:19:56,706 - INFO - viewsets - Novo pixel criado no banco de pixels, criado por 
+2024-09-04 00:20:47,290 - INFO - viewsets - Novo pixel criado no banco de pixels, criado por <django.db.models.query_utils.DeferredAttribute object at 0x0000023C78841430>
+2024-09-04 00:30:23,905 - INFO - middleware - Middleware executado: Interceptando requisição
+2024-09-04 00:30:23,905 - INFO - middleware - Valor do cabeçalho armazenado na sessão: 
+2024-09-04 00:30:23,968 - INFO - middleware - Middleware executado: Interceptando resposta
+2024-09-04 00:32:28,093 - INFO - middleware - Middleware executado: Interceptando requisição

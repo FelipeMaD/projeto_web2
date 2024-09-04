@@ -108,6 +108,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'setup.middleware.CustomMiddleware' ,
 ]
 
 ROOT_URLCONF = 'setup.urls'
@@ -188,3 +189,40 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# LOGGING
+
+LOGGING = {
+
+    'version': 1,
+    'disable_existing_loggers' : False,
+    'formatters' : {
+        'verbose': { 'format': '%(asctime)s - %(levelname)s - %(module)s - %(message)s' },
+        'simple': { 'format': '%(levelname)s - %(message)s' },
+
+    }, "handlers"  : {
+            'file': {
+                'level': 'DEBUG',
+                'class': 'logging.FileHandler' ,
+                'filename' : f'{BASE_DIR }/django.log' ,
+                'formatter' : 'verbose' ,
+
+            }, 
+
+            'console' : {
+                'level': 'DEBUG',
+                'class': 'logging.StreamHandler' ,
+                'formatter' : 'simple' ,
+                } ,
+
+    }, "loggers" : {
+        'custom': {
+            'handlers': ['file', 'console'],
+            'level': 'INFO',
+            'propagate' : False,
+        },
+
+    },
+}
+
