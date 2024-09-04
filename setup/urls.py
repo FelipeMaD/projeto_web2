@@ -19,10 +19,13 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from appteste.api.router import appteste_router
+from rest_framework_simplejwt.views import TokenObtainPairView , TokenRefreshView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(appteste_router.urls)) ,
+    path('api/login/', TokenObtainPairView.as_view(), name='login_obtain_pair'),
+    path('api/login/refresh/', TokenRefreshView.as_view(), name='login_refresh'),
 
 ] +  static(settings.MEDIA_URL , document_root =settings.MEDIA_ROOT)

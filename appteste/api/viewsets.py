@@ -7,6 +7,6 @@ from .permissions import IsInSpecificGroup
 class PixelsViewSet(viewsets.ModelViewSet):
     queryset = models.Pixels.objects.all()
     serializer_class = serializers.Pixels
-    permission_classes = [permissions.IsAuthenticated, IsInSpecificGroup]
+    permission_classes = [permissions.IsAuthenticated, IsInSpecificGroup, permissions.DjangoModelPermissions]
 
 
