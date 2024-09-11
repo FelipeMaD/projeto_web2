@@ -4,3 +4,7 @@
 2024-09-04 00:30:23,905 - INFO - middleware - Valor do cabeçalho armazenado na sessão: 
 2024-09-04 00:30:23,968 - INFO - middleware - Middleware executado: Interceptando resposta
 2024-09-04 00:32:28,093 - INFO - middleware - Middleware executado: Interceptando requisição
+2024-09-11 00:13:48,215 - INFO - middleware - Middleware executado: Interceptando requisição
+2024-09-11 00:13:48,613 - INFO - middleware - Middleware executado: Interceptando requisição
+2024-09-11 00:13:53,226 - INFO - middleware - Middleware executado: Interceptando requisição
+2024-09-11 00:13:53,310 - INFO - middleware - Middleware executado: Interceptando requisição
